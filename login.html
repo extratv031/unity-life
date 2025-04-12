@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+/* made with love from alex - xshadow */
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SocialApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #15202B;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #192734;
+            border-radius: 15px;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .btn-primary:hover {
+            background-color: #1a91da;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #1DA1F2;
+            border: 2px solid #1DA1F2;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 18px;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(29, 161, 242, 0.1);
+        }
+        .logo {
+            font-size: 40px;
+            color: #1DA1F2;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <h1 class="text-2xl font-bold mb-6">Welcome to SocialApp</h1>
+        <p class="mb-8">Connect with friends and the world around you.</p>
+        
+        <a href="auth/login.php" class="btn-primary">Log In</a>
+        <a href="auth/register.php" class="btn-secondary">Create New Account</a>
+        
+        <p class="mt-8 text-gray-500">By continuing, you agree to our Terms of Service and Privacy Policy.</p>
+    </div>
+</body>
+</html>
